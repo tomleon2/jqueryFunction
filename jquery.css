@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: tomato;
+    text-align: center;
+
+}
+.container{
+    width: 970px;
+    margin: 0 auto;
+
+
+}
+.column{
+    width: 130px;
+    height: 70px;
+    /* color: lightsalmon; */
+    display: inline-block;
+    border-right: 1px solid gray;
+    margin: 5px;
+    line-height: 70px;
+}
+
+.content {
+    width: 700px;
+    height: 120px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+}
+.function{ 
+    /* background-color: tomato; */
+    height: 120px;
+    width: 100%;
+
+    
+
+}
+button {
+    background-color: lightblue;
+    width: 100px;
+    height: 30px;
+}
+p{ 
+    display: inline-block;
+    vertical-align: top;
+
+}
+.redBold{
+    font-weight: bold;
+    color: red;
+
+}
+
+.beforeStyle {
+    display: block;
+    color: blue;
+}
+
+.click, .hide, .show, .toggle, .slideDown, .slideUp, .slideToggle, .fadeIn, .fadeOut, .addClass, .before, .after, .append, .html, .attr, .val, .text {
+}
+
+.btn-click, .btn-hide, .btn-show, .btn-toggle, .btn-slideDown, .btn-slideUp, .btn-slideToggle, .btn-fadeIn, .btn-fadeOut, .btn-addClass, .btn-before, .btn-after, .btn-append, .btn-html, .btn-attr, .btn-val, .btn-text {
+
+}
+/* 
+.click, .hide, .show, .toggle, .slideDown, .slideUp, .slideToggle, .fadeIn, .fadeOut, .addClass, .before, .after, .append, .html, .attr, .val, .text{
+
+}
+
+.btn-click, .btn-hide, .btn-show, .btn-toggle, .btn-slideDown, .btn-slideUp, .slideToggle, .fadeIn, .fadeOut, .addClass, .before, .after, .append, .html, .attr, .val, .text{
+
+} */
+/* .hide{
+
+}
+.show{
+
+} */

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jquery Functions</title>
+    <meta name="description" content="Accordance Bible Software">
+    <link rel="stylesheet" type="text/css" href="jquery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Click 
+            $(".btn-click").click(function(){
+                $(".click").html("This button has been clicked!!");
+            })
+            //Hide 
+            $(".btn-hide").click(function(){
+                $(".hide, .btn-hide").hide();
+                
+            })
+            //show
+            $(".btn-show").click(function(){
+                $(".hide, .btn-hide").show();
+            })
+            //toggle
+            $(".btn-toggle").click(function(){
+                $(".toggle").toggle();
+            })
+            //slidedown
+            $(".btn-slideDown").click(function(){
+                $(".slideUp").slideDown();
+            })
+            //slideUp
+            $(".btn-slideUp").click(function(){
+                $(".slideUp").slideUp();
+            })
+            //slidetoggle
+            $(".btn-slideToggle").click(function(){
+                $(".slideToggle").slideToggle();
+            })
+            //fadein
+            $(".btn-fadeIn").click(function(){
+                $(".fadeOut").fadeIn();
+            })
+            //fadeout
+            $(".btn-fadeOut").click(function(){
+                $(".fadeOut").fadeOut();
+            })
+            //addclass
+            $(".btn-addClass").click(function(){
+                $(".addClass").addClass("redBold");
+                console.log("add class lol")
+            })
+            //before
+            $(".btn-before").click(function(){
+                $(".before").before("<p class='beforeStyle'>Insert content, specified by the parameter, before each element in the set of matched elements.</p>");
+            })
+            //after
+            $(".btn-after").click(function(){
+                $(".after").after("<p class='beforeStyle'>Insert content, specified by the parameter, after each element in the set of matched elements.</p>");
+            })
+            //append
+            $(".btn-append").click(function(){
+                $(".append").append("adding to the end");
+            })
+            //html
+            $(".btn-html").click(function(){
+                $(".html").html("<p> html lololol </p>");
+            })
+            //attr
+            $(".btn-attr").hover(function(){
+                // $(".attr").attr("class");
+                $(".attr").text($(this).attr("src"));
+            })
+            //val
+            $(".btn-val").click(function(){
+                $(".val").val("cheesburgers");
+            })
+            //text
+            $(".btn-text").click(function(){
+                $(".text").text("yeeet");
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="function">
+            <h1>Click()</h1>
+            <div class="column">
+                <button class="btn-click">Click</button>
+            </div>
+            <div class="content">
+                <p class = "click">Bind an event handler to the “click” JavaScript event, or trigger that event on an element.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>Hide()</h1>
+            <div class="column">
+                <button class="btn-hide">Hide</button>
+            </div>
+            <div class="content">
+                <p class = "hide">Hide the matched elements.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>Show()</h1>
+            <div class="column">
+                <button class="btn-show">Show</button>
+            </div>
+            <div class="content">
+                <p class = "show">Display the matched elements.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>Toggle()</h1>
+            <div class="column">
+                <button class="btn-toggle">Toggle</button>
+            </div>
+            <div class="content">
+                <p class = "toggle">Display or hide the matched elements.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>slideDown()</h1>
+            <div class="column">
+                <button class="btn-slideDown">Slide Down</button>
+            </div>
+            <div class="content">
+                <p class = "slideDown">Display the matched elements with a sliding motion.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>slideUp()</h1>
+            <div class="column">
+                <button class="btn-slideUp">Slide Up</button>
+            </div>
+            <div class="content">
+                <p class = "slideUp">Hide the matched elements with a sliding motion.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>slideToggle()</h1>
+            <div class="column">
+                <button class="btn-slideToggle">Slide Toggle</button>
+            </div>
+            <div class="content">
+                <p class = "slideToggle">Display or hide the matched elements with a sliding motion.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>fadeIn()</h1>
+            <div class="column">
+                <button class="btn-fadeIn">Fade In</button>
+            </div>
+            <div class="content">
+                <p class = "fadeIn">Hit fade out first lol</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>fadeOut()</h1>
+            <div class="column">
+                <button class="btn-fadeOut">Fade Out</button>
+            </div>
+            <div class="content">
+                <p class = "fadeOut">Hide the matched elements by fading them to transparent.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>addClass()</h1>
+            <div class="column">
+                <button class="btn-addClass">Add Class</button>
+            </div>
+            <div class="content">
+                <p class = "addClass">Adds the specified class(es) to each element in the set of matched elements.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>before()</h1>
+            <div class="column">
+                <button class="btn-before">Before</button>
+            </div>
+            <div class="content">
+                <p class = "before">Insert content, specified by the parameter, before each element in the set of matched elements.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>after()</h1>
+            <div class="column">
+                <button class="btn-after">After</button>
+            </div>
+            <div class="content">
+                <p class = "after">Insert content, specified by the parameter, after each element in the set of matched elements.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>append()</h1>
+            <div class="column">
+                <button class="btn-append">Append</button>
+            </div>
+            <div class="content">
+                <p class = "append">Insert content, specified by the parameter, to the end of each element in the set of matched elements.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>html()</h1>
+            <div class="column">
+                <button class="btn-html">HTML</button>
+            </div>
+            <div class="content">
+                <p class = "html">Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>attr()</h1>
+            <div class="column">
+                <img class="btn-attr" src="C:\Users\hhh19\Desktop\memory\Dojo\Web Dev Belt Exam\accordance\take_the_tour.png" alt="heyyya"> 
+            </div>
+            <div class="content">
+                <p class = "attr">Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</p>
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>val()</h1>
+            <div class="column">
+   
+                <button class="btn-val">Val</button>
+            </div>
+            <div class="content">
+                <p>Get the current value of the first element in the set of matched elements or set the value of every matched element.</p>
+                <input type="text" class="val">
+            </div>
+        </div>
+        
+        <div class="function">
+            <h1>text()</h1>
+            <div class="column">
+                <button class="btn-text">Text</button>
+            </div>
+            <div class="content">
+                <p class = "text">Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.</p>
+            </div>
+        </div>
+        
+        
+        
+        
+    </div>
+
+</body>
+</html>
